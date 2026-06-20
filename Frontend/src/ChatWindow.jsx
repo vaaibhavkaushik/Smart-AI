@@ -27,7 +27,8 @@ function ChatWindow() {
     setNewChat(false);
 
     try {
-      const response = await fetch("http://localhost:8080/api/chat", {
+      const response = await fetch("https://smart-ai-backend-34b1.onrender.com/api/chat",
+         {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
